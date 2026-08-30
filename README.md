@@ -2,13 +2,14 @@
 
 **Full-Stack Web Developer — Cairo, Egypt**
 
-Seven years building production websites and the systems behind them: Laravel,
+Seven years building production websites and the systems behind them. Laravel,
 CakePHP and plain-PHP back-ends; React, Next.js and Vue on the front; and
 bilingual Arabic/English interfaces where right-to-left is a first-class
 requirement rather than a `dir="rtl"` afterthought.
 
-Most of what I ship goes to Egyptian and Gulf clients — news platforms, corporate
-sites, hosting providers, charitable platforms and admin dashboards.
+Much of my work is **Arabic-language news, media and fact-checking platforms** —
+newsrooms that need to publish fast, in Arabic, at scale. The rest is education,
+humanitarian and corporate work across Egypt, the Gulf, the UK and Australia.
 
 🏢 **TakTek** &nbsp;·&nbsp; 🌍 English / العربية &nbsp;·&nbsp; ⭐ 5.0 on Mostaql
 
@@ -16,16 +17,46 @@ sites, hosting providers, charitable platforms and admin dashboards.
 
 ---
 
+## Production work
+
+Live sites. Role stated exactly as it was.
+
+### News, media & fact-checking
+
+| Site | What it is | My role |
+|---|---|---|
+| [**Quds News Network**](https://qudsn.co/) | Palestinian news network — high-volume Arabic newsroom | Design **and** full-stack |
+| [**Tayaqan**](https://tayqan.net/) — تيقن | Community platform for verifying news and claims | Design **and** full-stack |
+| [**Maktoob Media**](https://maktoobmedia.com/) | Independent outlet covering human rights and minorities | Front-end (Figma → build) |
+| [**Hodhod**](https://hodhodpal.ps/) — الهدهد | Palestinian news network | Full-stack (Figma → build) |
+| [**Adeni Cast**](https://adenicast.com/) — عدني كاست | Independent Arabic podcast platform | Design **and** full-stack, Laravel |
+| [**Saleh Al-Arouri Archive**](https://al-arouri.net/) | Independent documentary archive | Design and front-end |
+
+### Education, humanitarian & corporate
+
+| Site | What it is | My role |
+|---|---|---|
+| [**OzCar**](https://www.ozcar.com.au/) | Australian car marketplace, a top-10 site in its market | Front-end (XD → build) |
+| [**BESA**](https://www.besaeg.com/) | Study-abroad platform | Front-end (Figma → build) |
+| [**Yedi Başak**](https://yedibasak.uk/) | UK humanitarian aid and charity | Full-stack, Laravel |
+| [**HandsOnTV**](https://handsontv.co.uk/) | UK media organisation | Front-end (XD → build) |
+| [**Power Line Egypt**](https://powerlineegypt.com/) | Engineering and contracting company | WordPress |
+
+---
+
 ## What I'm building
 
 ### Matn — a CMS for hand-built newsroom sites · *private*
 
-A content management system for sites that were designed by hand, not assembled
-from blocks. The client opens their real page inside the admin panel, clicks a
-heading to rewrite it and clicks a photo to swap it. There is no page builder and
-no drag-and-drop — **the design stays locked**. Pages live in the database rather
-than as files, every page shares one layout, and no URL carries a `.html`
-extension.
+After seven years of building newsrooms one at a time, the recurring problem was
+always the same: the client needs to edit their site, and every page builder
+destroys the design doing it.
+
+Matn is the answer. The client opens their real page inside the admin panel,
+clicks a heading to rewrite it and clicks a photo to swap it. There is no page
+builder and no drag-and-drop — **the design stays locked**. Pages live in the
+database rather than as files, every page shares one layout, and no URL carries
+a `.html` extension.
 
 | | |
 |---|---|
@@ -33,25 +64,6 @@ extension.
 | **Panel** | English and Arabic, right-to-left throughout |
 | **Quality** | PHPStan · PHPCS · PHPUnit, all gated in CI |
 | **Analytics** | First-party, no third-party trackers — session maths on SQL window functions |
-
----
-
-## Selected work
-
-| Project | What it is | Stack | Live |
-|---|---|---|---|
-| [**Al-Mohajer**](https://github.com/imsemoo/mohajer) | News platform for migrants and refugees in Egypt and the Middle East | HTML · CSS · JS · RTL | [↗](https://imsemoo.github.io/mohajer/) |
-| [**YottaSrc**](https://github.com/imsemoo/yottasrc) | Web-hosting provider site — cPanel, reseller and dedicated plans, domain flows, client dashboard. Bilingual EN/AR, multi-currency | PHP · i18n · RTL | — |
-| [**BESA**](https://github.com/imsemoo/besa) | Study-abroad platform — pathway programmes, destination guides, education-fair registration. 30+ pages | HTML · CSS · JS · jQuery | — |
-| [**Eltizam**](https://github.com/imsemoo/eltizam) | Corporate site for a Sharia-compliance advisory firm | HTML · CSS · JS | [↗](https://imsemoo.github.io/eltizam/) |
-| [**Buruj**](https://github.com/imsemoo/Buruj) | Corporate site with a multi-step application form | HTML · CSS · JS | [↗](https://imsemoo.github.io/Buruj/) |
-| [**InTimedev**](https://github.com/imsemoo/Intimedev) | Agency site for a web and mobile development studio | HTML · CSS · JS · AOS | [↗](https://imsemoo.github.io/Intimedev/) |
-| [**TourGuide Speakers**](https://github.com/imsemoo/TourGuideSpeaker) | Front-end for a professional whisper / tour-guide audio system | HTML · CSS · JS | — |
-| [**Portfolio**](https://github.com/imsemoo/eslam-portfolio) | My own site | HTML · CSS · JS | [↗](https://imsemoo.github.io/eslam-portfolio/) |
-
-More client work — Calimero, Masnad, Powerline Egypt, Adanicast, Yedi Basak —
-lives in private repositories. The write-ups are on
-[Mostaql](https://mostaql.com/u/imsemoo/portfolio).
 
 ---
 
@@ -64,10 +76,25 @@ lives in private repositories. The write-ups are on
 `JavaScript (ES6+)` · `TypeScript` · `React` · `Next.js` · `Vue 3` · `SCSS` · `Tailwind` · `Bootstrap` · `jQuery` · `GSAP` · `AOS`
 
 **Craft**
-Arabic/English bilingual UI · RTL layout with logical properties · responsive from 375 px up · semantic HTML · accessible forms · PSD/Figma to pixel-accurate markup · on-page SEO
+Arabic/English bilingual UI · RTL layout with logical properties · responsive from 375 px up · semantic HTML · accessible forms · Figma and XD to pixel-accurate markup · on-page SEO
 
 **Tools**
 `Git` · `GitHub Actions` · `Figma` · `Adobe XD` · `Laragon` · `VS Code`
+
+---
+
+## Code here on GitHub
+
+Client back-ends stay private. These are the front-ends I can show:
+
+| Repo | What it is | Live |
+|---|---|---|
+| [`mohajer`](https://github.com/imsemoo/mohajer) | News platform for migrants and refugees in Egypt and the Middle East | [↗](https://imsemoo.github.io/mohajer/) |
+| [`yottasrc`](https://github.com/imsemoo/yottasrc) | Web-hosting provider site and client dashboard — bilingual EN/AR, multi-currency | — |
+| [`besa`](https://github.com/imsemoo/besa) | The BESA front-end, 30+ hand-built pages | [↗](https://www.besaeg.com/) |
+| [`eltizam`](https://github.com/imsemoo/eltizam) | Sharia-compliance advisory firm | [↗](https://imsemoo.github.io/eltizam/) |
+| [`Buruj`](https://github.com/imsemoo/Buruj) | Corporate site with a multi-step application form | [↗](https://imsemoo.github.io/Buruj/) |
+| [`Intimedev`](https://github.com/imsemoo/Intimedev) | Agency site, scroll-driven animation | [↗](https://imsemoo.github.io/Intimedev/) |
 
 ---
 
