@@ -97,10 +97,11 @@ Arabic/English bilingual UI · RTL layout with logical properties · responsive 
 
 ## Code here on GitHub
 
-Client back-ends stay private. These are the front-ends I can show:
+Most client back-ends stay private. This is what I can show:
 
 | Repo | What it is | Live |
 |---|---|---|
+| [`yassiru`](https://github.com/imsemoo/yassiru) | **يسّروا** — a Laravel + Vue platform for making marriage attainable: candidate matching, premarital courses and counselling, guarantee-fund savings circles, group weddings and digital contracts. Dockerised, Sanctum, Spatie roles | — |
 | [`mohajer`](https://github.com/imsemoo/mohajer) | News platform for migrants and refugees in Egypt and the Middle East | [↗](https://imsemoo.github.io/mohajer/) |
 | [`yottasrc`](https://github.com/imsemoo/yottasrc) | Web-hosting provider site and client dashboard — bilingual EN/AR, multi-currency | — |
 | [`besa`](https://github.com/imsemoo/besa) | The BESA front-end, 30+ hand-built pages | [↗](https://www.besaeg.com/) |
