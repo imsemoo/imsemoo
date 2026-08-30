@@ -13,7 +13,42 @@ humanitarian and corporate work across Egypt, the Gulf, the UK and Australia.
 
 🏢 **TakTek** &nbsp;·&nbsp; 🌍 English / العربية &nbsp;·&nbsp; ⭐ 5.0 on Mostaql
 
-[**LinkedIn**](https://www.linkedin.com/in/imsemooo/) &nbsp;·&nbsp; [**Upwork**](https://www.upwork.com/freelancers/imsemoo) &nbsp;·&nbsp; [**Mostaql**](https://mostaql.com/u/imsemoo/portfolio) &nbsp;·&nbsp; [**Portfolio**](https://imsemoo.github.io/eslam-portfolio/)
+[**LinkedIn**](https://www.linkedin.com/in/imsemooo/) &nbsp;·&nbsp; [**Upwork**](https://www.upwork.com/freelancers/imsemoo) &nbsp;·&nbsp; [**Mostaql**](https://mostaql.com/u/imsemoo/portfolio) &nbsp;·&nbsp; [**Portfolio**](https://imsemoo.github.io/Portfolio-Dark/)
+
+---
+
+## What I'm building
+
+### احسبلي — [Ahsebli](https://ahsebli.com/)
+
+Over 100 Arabic financial calculators for Saudi Arabia, the Gulf and Egypt:
+salaries and end-of-service, Islamic loans and murabaha, zakat, gold at today's
+price, income and VAT, currency — plus health and everyday tools.
+
+Search is the whole distribution channel, so the plumbing is part of the
+product: generated sitemap, RSS and Open Graph images, a glossary, category
+hubs, and seasonal landing pages that go up when the search volume does. It is
+an installable PWA with a service worker, so a calculator someone saved keeps
+working offline.
+
+### Matn — a CMS for hand-built newsroom sites · *private*
+
+After seven years of building newsrooms one at a time, the recurring problem was
+always the same: the client needs to edit their site, and every page builder
+destroys the design doing it.
+
+Matn is the answer. The client opens their real page inside the admin panel,
+clicks a heading to rewrite it and clicks a photo to swap it. There is no page
+builder and no drag-and-drop — **the design stays locked**. Pages live in the
+database rather than as files, every page shares one layout, and no URL carries
+a `.html` extension.
+
+| | |
+|---|---|
+| **Stack** | CakePHP 5.1 · PHP 8.1+ · MySQL 8 |
+| **Panel** | English and Arabic, right-to-left throughout |
+| **Quality** | PHPCS, PHPStan and 1,500 PHPUnit tests, all gated in CI |
+| **Analytics** | First-party, no third-party trackers — session maths on SQL window functions |
 
 ---
 
@@ -44,29 +79,6 @@ Live sites. Role stated exactly as it was.
 
 ---
 
-## What I'm building
-
-### Matn — a CMS for hand-built newsroom sites · *private*
-
-After seven years of building newsrooms one at a time, the recurring problem was
-always the same: the client needs to edit their site, and every page builder
-destroys the design doing it.
-
-Matn is the answer. The client opens their real page inside the admin panel,
-clicks a heading to rewrite it and clicks a photo to swap it. There is no page
-builder and no drag-and-drop — **the design stays locked**. Pages live in the
-database rather than as files, every page shares one layout, and no URL carries
-a `.html` extension.
-
-| | |
-|---|---|
-| **Stack** | CakePHP 5.1 · PHP 8.1+ · MySQL 8 |
-| **Panel** | English and Arabic, right-to-left throughout |
-| **Quality** | PHPStan · PHPCS · PHPUnit, all gated in CI |
-| **Analytics** | First-party, no third-party trackers — session maths on SQL window functions |
-
----
-
 ## Stack
 
 **Back-end**
@@ -76,7 +88,7 @@ a `.html` extension.
 `JavaScript (ES6+)` · `TypeScript` · `React` · `Next.js` · `Vue 3` · `SCSS` · `Tailwind` · `Bootstrap` · `jQuery` · `GSAP` · `AOS`
 
 **Craft**
-Arabic/English bilingual UI · RTL layout with logical properties · responsive from 375 px up · semantic HTML · accessible forms · Figma and XD to pixel-accurate markup · on-page SEO
+Arabic/English bilingual UI · RTL layout with logical properties · responsive from 375 px up · semantic HTML · accessible forms · Figma and XD to pixel-accurate markup · on-page SEO · PWAs that work offline
 
 **Tools**
 `Git` · `GitHub Actions` · `Figma` · `Adobe XD` · `Laragon` · `VS Code`
@@ -92,7 +104,6 @@ Client back-ends stay private. These are the front-ends I can show:
 | [`mohajer`](https://github.com/imsemoo/mohajer) | News platform for migrants and refugees in Egypt and the Middle East | [↗](https://imsemoo.github.io/mohajer/) |
 | [`yottasrc`](https://github.com/imsemoo/yottasrc) | Web-hosting provider site and client dashboard — bilingual EN/AR, multi-currency | — |
 | [`besa`](https://github.com/imsemoo/besa) | The BESA front-end, 30+ hand-built pages | [↗](https://www.besaeg.com/) |
-| [`eltizam`](https://github.com/imsemoo/eltizam) | Sharia-compliance advisory firm | [↗](https://imsemoo.github.io/eltizam/) |
 | [`Buruj`](https://github.com/imsemoo/Buruj) | Corporate site with a multi-step application form | [↗](https://imsemoo.github.io/Buruj/) |
 | [`Intimedev`](https://github.com/imsemoo/Intimedev) | Agency site, scroll-driven animation | [↗](https://imsemoo.github.io/Intimedev/) |
 
