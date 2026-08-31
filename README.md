@@ -31,7 +31,7 @@ hubs, and seasonal landing pages that go up when the search volume does. It is
 an installable PWA with a service worker, so a calculator someone saved keeps
 working offline.
 
-### Matn — a CMS for hand-built newsroom sites · *private*
+### [Matn](https://imsemoo.github.io/matn-site/) — a CMS for hand-built newsroom sites · *code private*
 
 After seven years of building newsrooms one at a time, the recurring problem was
 always the same: the client needs to edit their site, and every page builder
