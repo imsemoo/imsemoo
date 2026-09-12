@@ -95,8 +95,8 @@ Arabic news and claim verification · Design and full-stack
 
 | | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
 |---|---|---|---|---|---|---|---|
-| Mobile | **96** | **100** | **100** | **100** | 2.6 s | 0.014 | 10 ms |
-| Desktop | **94** | **100** | **100** | **100** | 0.6 s | 0.012 | 170 ms |
+| Mobile | **98** | **100** | **100** | **100** | 2.3 s | 0.014 | 60 ms |
+| Desktop | **99** | **100** | **100** | **100** | 0.6 s | 0.013 | 40 ms |
 
 <sub>Measured 12 September 2026 · Lighthouse 13.4.1 · [raw results](data/psi) · [workflow](.github/workflows/pagespeed.yml)</sub>
 <!-- PSI:END -->
