@@ -25,6 +25,10 @@ on:
         description: 'Comma-separated substrings — measure just these sites'
         type: string
         default: ''
+      samples:
+        description: 'Runs per device; the median is reported (blank = 3, or 1 on a dry run)'
+        type: string
+        default: ''
   push:
     branches: [main] # a side branch can be measured on demand with `dry`
     paths:
@@ -56,7 +60,7 @@ jobs:
           PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
         # A dry run is for looking, so it measures every site including the
         # ones held out of the published table.
-        run: node .github/scripts/psi.mjs ${{ inputs.dry && '--dry --all' || '' }} ${{ inputs.only && format('--only={0}', inputs.only) || '' }}
+        run: node .github/scripts/psi.mjs ${{ inputs.dry && '--dry --all' || '' }} ${{ inputs.only && format('--only={0}', inputs.only) || '' }} ${{ inputs.samples && format('--samples={0}', inputs.samples) || '' }}
 
       - name: Commit the new numbers
         # Not success(): a run that lost one request out of four still
