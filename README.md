@@ -55,6 +55,24 @@ a `.html` extension.
 ## Performance, accessibility and SEO — measured weekly
 
 <!-- PSI:START -->
+
+A screenshot of a score proves nothing — it is a picture of one good run.
+The table below is re-measured every Monday by a GitHub Action that calls
+Google's PageSpeed Insights API and rewrites this section. Paste the same URL
+into [pagespeed.web.dev](https://pagespeed.web.dev/) and you get the same report.
+
+### مسند — [musnadye.com](https://musnadye.com/)
+
+Arabic news and claim verification · Design and full-stack
+
+![mobile scores](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fimsemoo%2Fimsemoo%2Fmain%2Fdata%2Fbadges%2Fmusnadye-com-mobile.json) ![desktop scores](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fimsemoo%2Fimsemoo%2Fmain%2Fdata%2Fbadges%2Fmusnadye-com-desktop.json)
+
+| | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
+|---|---|---|---|---|---|---|---|
+| Mobile | **96** | **100** | **100** | **100** | 2.6 s | 0.014 | 10 ms |
+| Desktop | **94** | **100** | **100** | **100** | 0.6 s | 0.012 | 170 ms |
+
+<sub>Measured 12 September 2026 · Lighthouse 13.4.1 · [raw results](data/psi) · [workflow](.github/workflows/pagespeed.yml)</sub>
 <!-- PSI:END -->
 
 ---
