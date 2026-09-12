@@ -134,8 +134,9 @@ function renderSection(entries, measuredAt) {
   lines.push("Google's PageSpeed Insights API and rewrites this section. Paste the same URL");
   lines.push('into [pagespeed.web.dev](https://pagespeed.web.dev/) and you get the same report.');
   lines.push('');
-  lines.push('A site joins this table when it passes, not when it ships. The rest of the');
-  lines.push('fleet is measured on the same schedule and worked on until it earns a row.');
+  lines.push('A site joins this table when it passes, not when it ships: no category');
+  lines.push('below 90, on both mobile and desktop. The rest of the fleet is measured on');
+  lines.push('the same schedule and worked on until it earns a row.');
   lines.push('');
 
   for (const entry of entries) {
