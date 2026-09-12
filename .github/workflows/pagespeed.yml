@@ -59,7 +59,10 @@ jobs:
         run: node .github/scripts/psi.mjs ${{ inputs.dry && '--dry --all' || '' }} ${{ inputs.only && format('--only={0}', inputs.only) || '' }}
 
       - name: Commit the new numbers
-        if: ${{ !inputs.dry }}
+        # Not success(): a run that lost one request out of four still
+        # measured the rest, and dropping all of it was how a whole publish
+        # went missing. The job still reports failure afterwards.
+        if: ${{ !cancelled() && !inputs.dry }}
         run: |
           if [ -z "$(git status --porcelain)" ]; then
             echo "Scores unchanged — nothing to commit."

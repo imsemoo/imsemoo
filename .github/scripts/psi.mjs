@@ -13,6 +13,7 @@
  *
  * Usage: node .github/scripts/psi.mjs [--dry] [--all] [--only=a,b]
  *        --only only these sites (substring of the URL or the name)
+ *        --samples=N runs per strategy; the median record is published (default 3, or 1 with --dry)
  *        --dry  print the rendered section, write nothing
  *        --all  measure sites flagged "psi": false too (pair it with --dry)
  * Env:   PAGESPEED_API_KEY (required in CI; the anonymous quota is shared
@@ -40,6 +41,11 @@ const ONLY = (process.argv.find((a) => a.startsWith('--only=')) || '')
   .map((s) => s.trim())
   .filter(Boolean);
 const KEY = process.env.PAGESPEED_API_KEY || '';
+// A publish is worth three runs per strategy; a dry look is one, because it
+// exists to answer "roughly where is this site" over the whole fleet.
+const SAMPLES = Number(
+  (process.argv.find((a) => a.startsWith('--samples=')) || '').slice(10) || (DRY ? 1 : 3)
+);
 
 const slugify = (url) =>
   new URL(url).hostname.replace(/^www\./, '').replace(/[^a-z0-9]+/gi, '-').toLowerCase();
@@ -63,7 +69,13 @@ async function runPsi(url, strategy) {
   let lastError;
   for (let attempt = 1; attempt <= 4; attempt++) {
     try {
-      const res = await fetch(endpoint, { headers: { 'User-Agent': 'imsemoo-profile-psi' } });
+      // PSI can hold a connection open for a minute and then drop the body
+      // ("terminated"). An explicit deadline makes that a retry rather than a
+      // dead run.
+      const res = await fetch(endpoint, {
+        headers: { 'User-Agent': 'imsemoo-profile-psi' },
+        signal: AbortSignal.timeout(120000),
+      });
       if (res.ok) return res.json();
       const body = await res.text();
       lastError = new Error('PSI ' + res.status + ' for ' + url + ' (' + strategy + '): ' + body.slice(0, 300));
@@ -123,6 +135,29 @@ function summarise(result) {
   };
 }
 
+/**
+ * One PSI run is not a measurement. The same site answered 90, then 79, then
+ * 80 on mobile within minutes, so a single sample can put a site over or under
+ * the bar by chance. Take N runs and publish the MEDIAN record whole — never a
+ * metric-by-metric mix, which would describe a page that never existed.
+ */
+async function measure(url, strategy, samples) {
+  const runs = [];
+  for (let i = 0; i < samples; i++) {
+    if (i) await sleep(3000);
+    runs.push(summarise(await runPsi(url, strategy)));
+  }
+  const ranked = [...runs].sort(
+    (a, b) => (a.scores.performance ?? -1) - (b.scores.performance ?? -1)
+  );
+  const median = ranked[Math.floor(ranked.length / 2)];
+  return {
+    ...median,
+    samples: runs.length,
+    performanceSamples: runs.map((r) => r.scores.performance),
+  };
+}
+
 const cell = (n) => (n === null || n === undefined ? '—' : String(n));
 const shown = (m) => (m && m.display ? m.display.replace(/ /g, ' ') : '—');
 
@@ -134,9 +169,13 @@ function renderSection(entries, measuredAt) {
   lines.push("Google's PageSpeed Insights API and rewrites this section. Paste the same URL");
   lines.push('into [pagespeed.web.dev](https://pagespeed.web.dev/) and you get the same report.');
   lines.push('');
+  lines.push('Each number is the median of three runs per device, because one run is not a');
+  lines.push('measurement — the same page answered 90, 79 and 80 on mobile within minutes.');
+  lines.push('');
   lines.push('A site joins this table when it passes, not when it ships: no category');
-  lines.push('below 90, on both mobile and desktop. The rest of the fleet is measured on');
-  lines.push('the same schedule and worked on until it earns a row.');
+  lines.push('below 90 on either device, held across three runs rather than caught once.');
+  lines.push('The rest of the fleet is measured on the same schedule and worked on until');
+  lines.push('it earns a row.');
   lines.push('');
 
   for (const entry of entries) {
@@ -230,12 +269,15 @@ async function main() {
     for (const strategy of STRATEGIES) {
       process.stdout.write('· ' + site.url + ' (' + strategy + ') … ');
       try {
-        const summary = summarise(await runPsi(site.url, strategy));
+        const summary = await measure(site.url, strategy, SAMPLES);
         results[strategy] = summary;
         console.log(
           Object.entries(summary.scores)
             .map(([k, v]) => k + ' ' + cell(v))
-            .join('  ')
+            .join('  ') +
+            (summary.samples > 1
+              ? '   (median of ' + summary.samples + ': perf ' + summary.performanceSamples.join('/') + ')'
+              : '')
         );
       } catch (err) {
         console.log('failed');
