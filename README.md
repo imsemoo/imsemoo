@@ -52,6 +52,13 @@ a `.html` extension.
 
 ---
 
+## Performance, accessibility and SEO — measured weekly
+
+<!-- PSI:START -->
+<!-- PSI:END -->
+
+---
+
 ## Production work
 
 Live sites. Role stated exactly as it was.

@@ -1,0 +1,56 @@
+name: PageSpeed
+
+# Re-measures every site in .github/psi-sites.json against Google's PageSpeed
+# Insights API and commits the result: the README table, the shields badge
+# payloads, and the raw JSON under data/psi.
+#
+# Needs one repository secret, PAGESPEED_API_KEY — a free Google Cloud API key
+# with the PageSpeed Insights API enabled. Without it the request falls back to
+# the anonymous quota, which is shared across the whole internet and is almost
+# always exhausted (HTTP 429).
+
+on:
+  schedule:
+    - cron: '0 6 * * 1' # every Monday, 06:00 UTC
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/psi-sites.json'
+      - '.github/scripts/psi.mjs'
+      - '.github/workflows/pagespeed.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pagespeed
+  cancel-in-progress: false
+
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Measure
+        env:
+          PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
+        run: node .github/scripts/psi.mjs
+
+      - name: Commit the new numbers
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Scores unchanged — nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md data
+          git commit -m "chore(psi): re-measured $(date -u '+%Y-%m-%d')"
+          git push
