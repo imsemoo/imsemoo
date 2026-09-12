@@ -4,5 +4,93 @@
     "url": "https://musnadye.com/",
     "note": "Arabic news and claim verification",
     "role": "Design and full-stack"
+  },
+  {
+    "name": "قدس الإخبارية",
+    "url": "https://qudsn.co/",
+    "note": "Palestinian news network — high-volume Arabic newsroom",
+    "role": "Design and full-stack",
+    "psi": false
+  },
+  {
+    "name": "تيقن",
+    "url": "https://tayqan.net/",
+    "note": "Community platform for verifying news and claims",
+    "role": "Design and full-stack",
+    "psi": false
+  },
+  {
+    "name": "الهدهد",
+    "url": "https://hodhodpal.ps/",
+    "note": "Palestinian news network",
+    "role": "Full-stack (Figma → build)",
+    "psi": false
+  },
+  {
+    "name": "مكتوب ميديا",
+    "url": "https://maktoobmedia.com/",
+    "note": "Independent outlet covering human rights and minorities",
+    "role": "Front-end, then the performance and security pass",
+    "psi": false
+  },
+  {
+    "name": "عدني كاست",
+    "url": "https://adenicast.com/",
+    "note": "Independent Arabic podcast platform",
+    "role": "Design and full-stack, Laravel",
+    "psi": false
+  },
+  {
+    "name": "أرشيف صالح العاروري",
+    "url": "https://al-arouri.net/",
+    "note": "Independent documentary archive",
+    "role": "Design and front-end",
+    "psi": false
+  },
+  {
+    "name": "احسبلي",
+    "url": "https://ahsebli.com/",
+    "note": "100+ Arabic financial calculators — installable PWA",
+    "role": "My own product, end to end",
+    "psi": false
+  },
+  {
+    "name": "Yedi Başak",
+    "url": "https://yedibasak.uk/",
+    "note": "UK humanitarian aid and charity",
+    "role": "Full-stack, Laravel",
+    "psi": false
+  },
+  {
+    "name": "BESA",
+    "url": "https://www.besaeg.com/",
+    "note": "Study-abroad platform, 30+ hand-built pages",
+    "role": "Front-end (Figma → build)",
+    "health": false,
+    "psi": false
+  },
+  {
+    "name": "HandsOnTV",
+    "url": "https://handsontv.co.uk/",
+    "note": "UK media organisation",
+    "role": "Front-end (XD → build)",
+    "health": false,
+    "psi": false
+  },
+  {
+    "name": "OzCar",
+    "url": "https://www.ozcar.com.au/",
+    "note": "Australian car marketplace",
+    "role": "Front-end (XD → build)",
+    "health": false,
+    "psi": false
+  },
+  {
+    "name": "Power Line Egypt",
+    "url": "https://powerlineegypt.com/",
+    "note": "Engineering and contracting company",
+    "role": "WordPress",
+    "health": false,
+    "psi": false
   }
 ]

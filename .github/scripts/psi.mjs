@@ -11,7 +11,9 @@
  * The numbers are Google's own: anybody can paste the same URL into
  * https://pagespeed.web.dev/ and get them back.
  *
- * Usage: node .github/scripts/psi.mjs [--dry]
+ * Usage: node .github/scripts/psi.mjs [--dry] [--all]
+ *        --dry  print the rendered section, write nothing
+ *        --all  measure sites flagged "psi": false too (pair it with --dry)
  * Env:   PAGESPEED_API_KEY (required in CI; the anonymous quota is shared
  *        across the whole internet and is usually exhausted)
  */
@@ -124,6 +126,9 @@ function renderSection(entries, measuredAt) {
   lines.push("Google's PageSpeed Insights API and rewrites this section. Paste the same URL");
   lines.push('into [pagespeed.web.dev](https://pagespeed.web.dev/) and you get the same report.');
   lines.push('');
+  lines.push('A site joins this table when it passes, not when it ships. The rest of the');
+  lines.push('fleet is measured on the same schedule and worked on until it earns a row.');
+  lines.push('');
 
   for (const entry of entries) {
     const site = entry.site;
@@ -193,7 +198,11 @@ function renderSection(entries, measuredAt) {
 }
 
 async function main() {
-  const sites = JSON.parse(await readFile(SITES, 'utf8'));
+  const all = JSON.parse(await readFile(SITES, 'utf8'));
+  // A site is published once it earns it: "psi": false keeps it out of the
+  // README table. `--all` measures every site anyway, which is what a dry run
+  // is for — the numbers go to the job log and nowhere else.
+  const sites = process.argv.includes('--all') ? all : all.filter((s) => s.psi !== false);
   await mkdir(path.join(ROOT, 'data', 'psi'), { recursive: true });
   await mkdir(path.join(ROOT, 'data', 'badges'), { recursive: true });
 

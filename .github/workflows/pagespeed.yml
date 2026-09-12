@@ -8,12 +8,21 @@ name: PageSpeed
 # with the PageSpeed Insights API enabled. Without it the request falls back to
 # the anonymous quota, which is shared across the whole internet and is almost
 # always exhausted (HTTP 429).
+#
+# Run it manually with `dry` checked to see the numbers in the job log before
+# anything is written to a public README.
 
 on:
   schedule:
     - cron: '0 6 * * 1' # every Monday, 06:00 UTC
   workflow_dispatch:
+    inputs:
+      dry:
+        description: 'Measure and print only — commit nothing'
+        type: boolean
+        default: false
   push:
+    branches: [main] # a side branch can be measured on demand with `dry`
     paths:
       - '.github/psi-sites.json'
       - '.github/scripts/psi.mjs'
@@ -23,27 +32,28 @@ permissions:
   contents: write
 
 concurrency:
-  group: pagespeed
+  group: readme-writers # the health workflow rewrites the same README
   cancel-in-progress: false
 
 jobs:
   measure:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
 
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Measure
         env:
           PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
-        run: node .github/scripts/psi.mjs
+        run: node .github/scripts/psi.mjs ${{ inputs.dry && '--dry' || '' }}
 
       - name: Commit the new numbers
+        if: ${{ !inputs.dry }}
         run: |
           if [ -z "$(git status --porcelain)" ]; then
             echo "Scores unchanged — nothing to commit."
@@ -53,4 +63,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md data
           git commit -m "chore(psi): re-measured $(date -u '+%Y-%m-%d')"
+          git pull --rebase --autostash
           git push
