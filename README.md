@@ -84,8 +84,13 @@ The table below is re-measured every Monday by a GitHub Action that calls
 Google's PageSpeed Insights API and rewrites this section. Paste the same URL
 into [pagespeed.web.dev](https://pagespeed.web.dev/) and you get the same report.
 
-A site joins this table when it passes, not when it ships. The rest of the
-fleet is measured on the same schedule and worked on until it earns a row.
+Each number is the median of three runs per device, because one run is not a
+measurement — the same page answered 90, 79 and 80 on mobile within minutes.
+
+A site joins this table when it passes, not when it ships: no category
+below 90 on either device, held across three runs rather than caught once.
+The rest of the fleet is measured on the same schedule and worked on until
+it earns a row.
 
 ### مسند — [musnadye.com](https://musnadye.com/)
 
@@ -95,8 +100,8 @@ Arabic news and claim verification · Design and full-stack
 
 | | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
 |---|---|---|---|---|---|---|---|
-| Mobile | **98** | **100** | **100** | **100** | 2.3 s | 0.014 | 60 ms |
-| Desktop | **99** | **100** | **100** | **100** | 0.6 s | 0.013 | 40 ms |
+| Mobile | **99** | **100** | **100** | **100** | 1.6 s | 0.014 | 90 ms |
+| Desktop | **100** | **100** | **100** | **100** | 0.4 s | 0.011 | 40 ms |
 
 <sub>Measured 12 September 2026 · Lighthouse 13.4.1 · [raw results](data/psi) · [workflow](.github/workflows/pagespeed.yml)</sub>
 <!-- PSI:END -->

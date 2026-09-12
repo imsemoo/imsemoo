@@ -1,43 +1,9 @@
 {
   "name": "مسند",
   "url": "https://musnadye.com/",
-  "measuredAt": "2026-09-12T09:27:57.414Z",
+  "measuredAt": "2026-09-12T14:36:13.016Z",
   "results": {
     "mobile": {
-      "scores": {
-        "performance": 98,
-        "accessibility": 100,
-        "best-practices": 100,
-        "seo": 100
-      },
-      "metrics": {
-        "lcp": {
-          "value": 2344.5226870122638,
-          "display": "2.3 s"
-        },
-        "cls": {
-          "value": 0.014047552854203,
-          "display": "0.014"
-        },
-        "tbt": {
-          "value": 59.5,
-          "display": "60 ms"
-        },
-        "fcp": {
-          "value": 1202.510470928737,
-          "display": "1.2 s"
-        },
-        "si": {
-          "value": 2802.3198235873188,
-          "display": "2.8 s"
-        }
-      },
-      "field": null,
-      "lighthouseVersion": "13.4.1",
-      "fetchTime": "2026-09-12T09:25:13.633Z",
-      "finalUrl": "https://musnadye.com/"
-    },
-    "desktop": {
       "scores": {
         "performance": 99,
         "accessibility": 100,
@@ -46,30 +12,76 @@
       },
       "metrics": {
         "lcp": {
-          "value": 561.0232182094288,
-          "display": "0.6 s"
+          "value": 1576.0186653746678,
+          "display": "1.6 s"
         },
         "cls": {
-          "value": 0.01261718681699929,
-          "display": "0.013"
+          "value": 0.014047552854203,
+          "display": "0.014"
         },
         "tbt": {
-          "value": 40.5,
-          "display": "40 ms"
+          "value": 90.5,
+          "display": "90 ms"
         },
         "fcp": {
-          "value": 459.70558495032947,
-          "display": "0.5 s"
+          "value": 1201.013175558589,
+          "display": "1.2 s"
         },
         "si": {
-          "value": 1173.6265884740756,
-          "display": "1.2 s"
+          "value": 1839.7191153954723,
+          "display": "1.8 s"
         }
       },
       "field": null,
       "lighthouseVersion": "13.4.1",
-      "fetchTime": "2026-09-12T09:27:35.026Z",
-      "finalUrl": "https://musnadye.com/"
+      "fetchTime": "2026-09-12T14:34:19.633Z",
+      "finalUrl": "https://musnadye.com/",
+      "samples": 3,
+      "performanceSamples": [
+        99,
+        96,
+        99
+      ]
+    },
+    "desktop": {
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": {
+          "value": 431.0116218996252,
+          "display": "0.4 s"
+        },
+        "cls": {
+          "value": 0.010791939482847877,
+          "display": "0.011"
+        },
+        "tbt": {
+          "value": 41.5,
+          "display": "40 ms"
+        },
+        "fcp": {
+          "value": 291.0054691292354,
+          "display": "0.3 s"
+        },
+        "si": {
+          "value": 681.5518718343297,
+          "display": "0.7 s"
+        }
+      },
+      "field": null,
+      "lighthouseVersion": "13.4.1",
+      "fetchTime": "2026-09-12T14:35:29.922Z",
+      "finalUrl": "https://musnadye.com/",
+      "samples": 3,
+      "performanceSamples": [
+        100,
+        100,
+        100
+      ]
     }
   }
 }
