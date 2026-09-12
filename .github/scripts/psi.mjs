@@ -11,7 +11,8 @@
  * The numbers are Google's own: anybody can paste the same URL into
  * https://pagespeed.web.dev/ and get them back.
  *
- * Usage: node .github/scripts/psi.mjs [--dry] [--all]
+ * Usage: node .github/scripts/psi.mjs [--dry] [--all] [--only=a,b]
+ *        --only only these sites (substring of the URL or the name)
  *        --dry  print the rendered section, write nothing
  *        --all  measure sites flagged "psi": false too (pair it with --dry)
  * Env:   PAGESPEED_API_KEY (required in CI; the anonymous quota is shared
@@ -31,6 +32,13 @@ const END = '<!-- PSI:END -->';
 const STRATEGIES = ['mobile', 'desktop'];
 const CATEGORIES = ['performance', 'accessibility', 'best-practices', 'seo'];
 const DRY = process.argv.includes('--dry');
+// Comma-separated substrings matched against the URL or the name, so one run
+// can re-measure the site that just changed instead of the whole fleet.
+const ONLY = (process.argv.find((a) => a.startsWith('--only=')) || '')
+  .slice(7)
+  .split(',')
+  .map((s) => s.trim())
+  .filter(Boolean);
 const KEY = process.env.PAGESPEED_API_KEY || '';
 
 const slugify = (url) =>
@@ -202,7 +210,8 @@ async function main() {
   // A site is published once it earns it: "psi": false keeps it out of the
   // README table. `--all` measures every site anyway, which is what a dry run
   // is for — the numbers go to the job log and nowhere else.
-  const sites = process.argv.includes('--all') ? all : all.filter((s) => s.psi !== false);
+  let sites = process.argv.includes('--all') ? all : all.filter((s) => s.psi !== false);
+  if (ONLY.length) sites = sites.filter((s) => ONLY.some((o) => s.url.includes(o) || s.name.includes(o)));
   await mkdir(path.join(ROOT, 'data', 'psi'), { recursive: true });
   await mkdir(path.join(ROOT, 'data', 'badges'), { recursive: true });
 

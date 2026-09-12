@@ -18,9 +18,13 @@ on:
   workflow_dispatch:
     inputs:
       dry:
-        description: 'Measure and print only — commit nothing'
+        description: 'Measure and print only — commit nothing (includes sites not yet in the table)'
         type: boolean
         default: false
+      only:
+        description: 'Comma-separated substrings — measure just these sites'
+        type: string
+        default: ''
   push:
     branches: [main] # a side branch can be measured on demand with `dry`
     paths:
@@ -50,7 +54,9 @@ jobs:
       - name: Measure
         env:
           PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
-        run: node .github/scripts/psi.mjs ${{ inputs.dry && '--dry' || '' }}
+        # A dry run is for looking, so it measures every site including the
+        # ones held out of the published table.
+        run: node .github/scripts/psi.mjs ${{ inputs.dry && '--dry --all' || '' }} ${{ inputs.only && format('--only={0}', inputs.only) || '' }}
 
       - name: Commit the new numbers
         if: ${{ !inputs.dry }}
