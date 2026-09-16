@@ -173,6 +173,7 @@ Most client back-ends stay private. This is what I can show:
 | Repo | What it is | Live |
 |---|---|---|
 | [`yassiru`](https://github.com/imsemoo/yassiru) | **يسّروا** — a Laravel + Vue platform for making marriage attainable: candidate matching, premarital courses and counselling, guarantee-fund savings circles, group weddings and digital contracts. Dockerised, Sanctum, Spatie roles | — |
+| [`kevla-campa`](https://github.com/imsemoo/kevla-campa) | **KEVLA CAMPA** — marketing site for a Kevlar and carbon-fibre teardrop caravan. Plain HTML, CSS and ES modules with no build step: scroll scenes on CSS view timelines with a JavaScript fallback, page-to-page view transitions, self-hosted variable fonts. No axe-core violations across 24 page states | [↗](https://imsemoo.github.io/kevla-campa/) |
 | [`mohajer`](https://github.com/imsemoo/mohajer) | News platform for migrants and refugees in Egypt and the Middle East | [↗](https://imsemoo.github.io/mohajer/) |
 | [`yottasrc`](https://github.com/imsemoo/yottasrc) | Web-hosting provider site and client dashboard — bilingual EN/AR, multi-currency | — |
 | [`besa`](https://github.com/imsemoo/besa) | The BESA front-end, 30+ hand-built pages | [↗](https://www.besaeg.com/) |
