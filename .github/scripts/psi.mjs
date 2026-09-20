@@ -166,16 +166,17 @@ function renderSection(entries, measuredAt) {
   lines.push('');
   lines.push('A screenshot of a score proves nothing — it is a picture of one good run.');
   lines.push('The table below is re-measured every Monday by a GitHub Action that calls');
-  lines.push("Google's PageSpeed Insights API and rewrites this section. Paste the same URL");
-  lines.push('into [pagespeed.web.dev](https://pagespeed.web.dev/) and you get the same report.');
+  lines.push("Google's PageSpeed Insights API and rewrites this section, whichever way the");
+  lines.push('numbers moved that week. Paste the same URL into');
+  lines.push('[pagespeed.web.dev](https://pagespeed.web.dev/) and you get the same report.');
   lines.push('');
   lines.push('Each number is the median of three runs per device, because one run is not a');
   lines.push('measurement — the same page answered 90, 79 and 80 on mobile within minutes.');
   lines.push('');
-  lines.push('A site joins this table when it passes, not when it ships: no category');
-  lines.push('below 90 on either device, held across three runs rather than caught once.');
-  lines.push('The rest of the fleet is measured on the same schedule and worked on until');
-  lines.push('it earns a row.');
+  lines.push('The bar is 90 in every category on both devices. Where a site is under it the');
+  lines.push('number stays on the page until the site is fixed, because a table that only');
+  lines.push('shows the good weeks is the screenshot problem again. The rest of the fleet is');
+  lines.push('measured on the same schedule.');
   lines.push('');
 
   for (const entry of entries) {

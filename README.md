@@ -82,16 +82,17 @@ a `.html` extension.
 
 A screenshot of a score proves nothing — it is a picture of one good run.
 The table below is re-measured every Monday by a GitHub Action that calls
-Google's PageSpeed Insights API and rewrites this section. Paste the same URL
-into [pagespeed.web.dev](https://pagespeed.web.dev/) and you get the same report.
+Google's PageSpeed Insights API and rewrites this section, whichever way the
+numbers moved that week. Paste the same URL into
+[pagespeed.web.dev](https://pagespeed.web.dev/) and you get the same report.
 
 Each number is the median of three runs per device, because one run is not a
 measurement — the same page answered 90, 79 and 80 on mobile within minutes.
 
-A site joins this table when it passes, not when it ships: no category
-below 90 on either device, held across three runs rather than caught once.
-The rest of the fleet is measured on the same schedule and worked on until
-it earns a row.
+The bar is 90 in every category on both devices. Where a site is under it the
+number stays on the page until the site is fixed, because a table that only
+shows the good weeks is the screenshot problem again. The rest of the fleet is
+measured on the same schedule.
 
 ### مسند — [musnadye.com](https://musnadye.com/)
 
