@@ -8,10 +8,11 @@ bilingual Arabic/English interfaces where right-to-left is a first-class
 requirement rather than a `dir="rtl"` afterthought.
 
 Much of my work is **Arabic-language news, media and fact-checking platforms** —
-newsrooms that need to publish fast, in Arabic, at scale. The rest is education,
-humanitarian and corporate work across Egypt, the Gulf, the UK and Australia.
+more than twenty-five of them, newsrooms that need to publish fast, in Arabic,
+at scale. The rest is education, humanitarian and corporate work across Egypt,
+the Gulf, the UK and Australia.
 
-🏢 **TakTek** &nbsp;·&nbsp; 🌍 English / العربية &nbsp;·&nbsp; ⭐ 5.0 on Mostaql
+🏢 **TakTek** &nbsp;·&nbsp; 🌍 English / العربية &nbsp;·&nbsp; 🏠 Remote, UTC+2 &nbsp;·&nbsp; ⭐ 5.0 on Mostaql
 
 [**LinkedIn**](https://www.linkedin.com/in/imsemooo/) &nbsp;·&nbsp; [**Upwork**](https://www.upwork.com/freelancers/imsemoo) &nbsp;·&nbsp; [**Mostaql**](https://mostaql.com/u/imsemoo/portfolio) &nbsp;·&nbsp; [**Portfolio**](https://imsemoo.github.io/Portfolio-Dark/)
 
@@ -125,27 +126,44 @@ with the numbers and the rejected ideas rather than only the wins.
 
 ## Production work
 
-Live sites. Role stated exactly as it was.
+Live sites, grouped by what they are. Role stated exactly as it was.
 
 ### News, media & fact-checking
 
 | Site | What it is | My role |
 |---|---|---|
 | [**Quds News Network**](https://qudsn.co/) | Palestinian news network — high-volume Arabic newsroom | Design **and** full-stack · Devlo CMS |
+| [**Musnad**](https://musnadye.com/) — مسند | Arabic news and claim verification | Design **and** full-stack · Laravel, Livewire |
+| [**Al-Jarmaq**](https://new.aljarmaq.net/) — الجرمق | Palestinian media network inside the 1948 territories | Design **and** full-stack · Laravel, Livewire |
 | [**Tayaqan**](https://tayqan.net/) — تيقن | Community platform for verifying news and claims | Design **and** full-stack · Devlo CMS |
 | [**Maktoob Media**](https://maktoobmedia.com/) | Independent outlet covering human rights and minorities | Front-end (Figma → build), then the performance and security pass · Devlo CMS |
 | [**Hodhod**](https://hodhodpal.ps/) — الهدهد | Palestinian news network | Full-stack (Figma → build) · Devlo CMS |
 | [**Adeni Cast**](https://adenicast.com/) — عدني كاست | Independent Arabic podcast platform | Design **and** full-stack · Devlo CMS |
 | [**Saleh Al-Arouri Archive**](https://al-arouri.net/) | Independent documentary archive | Design and front-end · Devlo CMS |
+| [**Qasioun Center for Studies**](https://qasiounstudies.org/) | Bilingual strategic-studies centre — papers, library, media | Design **and** full-stack · Laravel, Livewire |
 
-### Education, humanitarian & corporate
+### Platforms & apps
+
+| Site | What it is | My role |
+|---|---|---|
+| [**Mo3ta**](https://www.mo3ta.ps/) — معطي | Data platform with dashboards, maps and charts | Design **and** full-stack · Laravel, Inertia, Vue 3 |
+| [**FreightZone**](https://app.freightzone.com.au/) | Australian freight booking app | Designed it in Figma, then built the front-end |
+| **Calimero** | Multilingual restaurant and shop | Front-end, in a team · Next.js, TypeScript |
+
+### Business, education & non-profit
 
 | Site | What it is | My role |
 |---|---|---|
 | [**OzCar**](https://www.ozcar.com.au/) | Australian car marketplace, a top-10 site in its market | Front-end (XD → build) |
-| [**BESA**](https://www.besaeg.com/) | Study-abroad platform | Front-end (Figma → build) |
+| [**BESA**](https://www.besaeg.com/) | Study-abroad platform, 30+ hand-built pages | Front-end (Figma → build) |
 | [**Yedi Başak**](https://yedibasak.uk/) | UK humanitarian aid and charity | Full-stack, Laravel |
 | [**HandsOnTV**](https://handsontv.co.uk/) | UK media organisation | Front-end (XD → build) |
+| [**Hardware & Glass**](https://hardwareandglass.com/) | US architectural glass-hardware supplier | Front-end, hand-built |
+| [**BHF Couriers**](https://www.bhfcouriers.com.au/) | Australian courier company | Front-end |
+| [**Skills Beyond**](https://skillsbeyond.com.au/) | Driving school on Sydney's North Shore | WordPress |
+| [**Hive Studio**](https://hivestudio.net/) | Creative studio, bilingual | WordPress |
+| [**Infinity Blue Barramundi**](https://infinitybluebarramundi.com.au/) | Australian barramundi farm | WordPress |
+| [**IDD 2023**](https://innovation-driven-desalination.com/) | Desalination conference, bilingual | WordPress |
 | [**Power Line Egypt**](https://powerlineegypt.com/) | Engineering and contracting company | WordPress |
 
 ---
@@ -174,6 +192,8 @@ Most client back-ends stay private. This is what I can show:
 |---|---|---|
 | [`yassiru`](https://github.com/imsemoo/yassiru) | **يسّروا** — a Laravel + Vue platform for making marriage attainable: candidate matching, premarital courses and counselling, guarantee-fund savings circles, group weddings and digital contracts. Dockerised, Sanctum, Spatie roles | — |
 | [`kevla-campa`](https://github.com/imsemoo/kevla-campa) | **KEVLA CAMPA** — marketing site for a Kevlar and carbon-fibre teardrop caravan. Plain HTML, CSS and ES modules with no build step: scroll scenes on CSS view timelines with a JavaScript fallback, page-to-page view transitions, self-hosted variable fonts. No axe-core violations across 24 page states | [↗](https://imsemoo.github.io/kevla-campa/) |
+| [`bwabtek`](https://github.com/imsemoo/bwabtek) | **بوابتك** — bilingual landing page where the Arabic is the source and the English page is generated from it. Three build scripts own the copy, the `en/` build, the self-hosted fonts and the OG image; the copy build refuses to ship an Arabic diacritic or a colloquialism. No framework, no bundler, no third-party requests | — |
+| [`creatives-dashboard`](https://github.com/imsemoo/creatives-dashboard) | Multi-page dashboard UI for a creative agency — pricing, signup and a guided tour | — |
 | [`mohajer`](https://github.com/imsemoo/mohajer) | News platform for migrants and refugees in Egypt and the Middle East | [↗](https://imsemoo.github.io/mohajer/) |
 | [`yottasrc`](https://github.com/imsemoo/yottasrc) | Web-hosting provider site and client dashboard — bilingual EN/AR, multi-currency | — |
 | [`besa`](https://github.com/imsemoo/besa) | The BESA front-end, 30+ hand-built pages | [↗](https://www.besaeg.com/) |
@@ -184,4 +204,4 @@ Most client back-ends stay private. This is what I can show:
 
 ## Get in touch
 
-Open to full-stack and front-end work — [LinkedIn](https://www.linkedin.com/in/imsemooo/) · [Upwork](https://www.upwork.com/freelancers/imsemoo) · [Mostaql](https://mostaql.com/u/imsemoo/portfolio)
+Open to remote full-stack and front-end work, contract or full-time — [LinkedIn](https://www.linkedin.com/in/imsemooo/) · [Upwork](https://www.upwork.com/freelancers/imsemoo) · [Mostaql](https://mostaql.com/u/imsemoo/portfolio)

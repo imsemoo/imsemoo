@@ -9,6 +9,19 @@
     "name": "قدس الإخبارية",
     "url": "https://qudsn.co/",
     "note": "Palestinian news network — high-volume Arabic newsroom",
+    "role": "Design and full-stack"
+  },
+  {
+    "name": "الجرمق",
+    "url": "https://new.aljarmaq.net/",
+    "note": "Palestinian media network inside the 1948 territories",
+    "role": "Design and full-stack",
+    "psi": false
+  },
+  {
+    "name": "مركز قاسيون للدراسات",
+    "url": "https://qasiounstudies.org/",
+    "note": "Bilingual strategic-studies centre — papers, library, media",
     "role": "Design and full-stack",
     "psi": false
   },
@@ -55,10 +68,66 @@
     "psi": false
   },
   {
+    "name": "معطي",
+    "url": "https://www.mo3ta.ps/",
+    "note": "Data platform with dashboards, maps and charts",
+    "role": "Design and full-stack — Laravel, Inertia, Vue 3",
+    "psi": false
+  },
+  {
+    "name": "FreightZone",
+    "url": "https://app.freightzone.com.au/",
+    "note": "Australian freight booking app",
+    "role": "Designed in Figma, then built the front-end",
+    "psi": false
+  },
+  {
     "name": "Yedi Başak",
     "url": "https://yedibasak.uk/",
     "note": "UK humanitarian aid and charity",
     "role": "Full-stack, Laravel",
+    "psi": false
+  },
+  {
+    "name": "Hive Studio",
+    "url": "https://hivestudio.net/",
+    "note": "Creative studio, bilingual",
+    "role": "WordPress",
+    "psi": false
+  },
+  {
+    "name": "Hardware & Glass",
+    "url": "https://hardwareandglass.com/",
+    "note": "US architectural glass-hardware supplier",
+    "role": "Front-end, hand-built",
+    "psi": false
+  },
+  {
+    "name": "Skills Beyond",
+    "url": "https://skillsbeyond.com.au/",
+    "note": "Driving school on Sydney's North Shore",
+    "role": "WordPress",
+    "psi": false
+  },
+  {
+    "name": "BHF Couriers",
+    "url": "https://www.bhfcouriers.com.au/",
+    "note": "Australian courier company",
+    "role": "Front-end",
+    "psi": false
+  },
+  {
+    "name": "Infinity Blue Barramundi",
+    "url": "https://infinitybluebarramundi.com.au/",
+    "note": "Australian barramundi farm",
+    "role": "WordPress",
+    "psi": false
+  },
+  {
+    "name": "IDD 2023",
+    "url": "https://innovation-driven-desalination.com/",
+    "note": "Desalination conference, bilingual",
+    "role": "WordPress",
     "psi": false
   },
   {
