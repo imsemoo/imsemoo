@@ -1,0 +1,97 @@
+{
+  "name": "قدس الإخبارية",
+  "url": "https://qudsn.co/",
+  "measuredAt": "2026-09-20T22:33:03.311Z",
+  "results": {
+    "mobile": {
+      "scores": {
+        "performance": 82,
+        "accessibility": 100,
+        "best-practices": 92,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": {
+          "value": 4741.016156985705,
+          "display": "4.7 s"
+        },
+        "cls": {
+          "value": 0,
+          "display": "0"
+        },
+        "tbt": {
+          "value": 44,
+          "display": "40 ms"
+        },
+        "fcp": {
+          "value": 1351.0038338610148,
+          "display": "1.4 s"
+        },
+        "si": {
+          "value": 2852.2952995242927,
+          "display": "2.9 s"
+        }
+      },
+      "field": {
+        "overall": "FAST",
+        "lcp_ms": 2327,
+        "inp_ms": 104,
+        "cls": 0
+      },
+      "lighthouseVersion": "13.4.1",
+      "fetchTime": "2026-09-20T22:31:34.986Z",
+      "finalUrl": "https://qudsn.co/",
+      "samples": 3,
+      "performanceSamples": [
+        82,
+        82,
+        82
+      ]
+    },
+    "desktop": {
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": {
+          "value": 943.5063476071456,
+          "display": "0.9 s"
+        },
+        "cls": {
+          "value": 0,
+          "display": "0"
+        },
+        "tbt": {
+          "value": 32.499999999999886,
+          "display": "30 ms"
+        },
+        "fcp": {
+          "value": 321.0027204030623,
+          "display": "0.3 s"
+        },
+        "si": {
+          "value": 723.4276119220164,
+          "display": "0.7 s"
+        }
+      },
+      "field": {
+        "overall": "FAST",
+        "lcp_ms": 2388,
+        "inp_ms": 26,
+        "cls": 1
+      },
+      "lighthouseVersion": "13.4.1",
+      "fetchTime": "2026-09-20T22:32:04.097Z",
+      "finalUrl": "https://qudsn.co/",
+      "samples": 3,
+      "performanceSamples": [
+        99,
+        98,
+        99
+      ]
+    }
+  }
+}

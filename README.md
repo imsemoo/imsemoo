@@ -101,10 +101,23 @@ Arabic news and claim verification · Design and full-stack
 
 | | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
 |---|---|---|---|---|---|---|---|
-| Mobile | **92** | **100** | **100** | **100** | 2.9 s | 0.014 | 90 ms |
-| Desktop | **100** | **100** | **100** | **100** | 0.5 s | 0.011 | 40 ms |
+| Mobile | **78** | **100** | **100** | **100** | 5.4 s | 0.006 | 40 ms |
+| Desktop | **100** | **100** | **100** | **100** | 0.5 s | 0.011 | 0 ms |
 
-<sub>Measured 14 September 2026 · Lighthouse 13.4.1 · [raw results](data/psi) · [workflow](.github/workflows/pagespeed.yml)</sub>
+### قدس الإخبارية — [qudsn.co](https://qudsn.co/)
+
+Palestinian news network — high-volume Arabic newsroom · Design and full-stack
+
+![mobile scores](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fimsemoo%2Fimsemoo%2Fmain%2Fdata%2Fbadges%2Fqudsn-co-mobile.json) ![desktop scores](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fimsemoo%2Fimsemoo%2Fmain%2Fdata%2Fbadges%2Fqudsn-co-desktop.json)
+
+| | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
+|---|---|---|---|---|---|---|---|
+| Mobile | **82** | **100** | **92** | **100** | 4.7 s | 0 | 40 ms |
+| Desktop | **99** | **100** | **96** | **100** | 0.9 s | 0 | 30 ms |
+
+Field data (real Chrome users, 28-day rolling): **FAST** — LCP 2.33 s · INP 104 ms · CLS 0.00.
+
+<sub>Measured 20 September 2026 · Lighthouse 13.4.1 · [raw results](data/psi) · [workflow](.github/workflows/pagespeed.yml)</sub>
 <!-- PSI:END -->
 
 
