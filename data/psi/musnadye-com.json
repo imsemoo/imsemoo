@@ -1,7 +1,7 @@
 {
   "name": "مسند",
   "url": "https://musnadye.com/",
-  "measuredAt": "2026-09-20T22:30:32.794Z",
+  "measuredAt": "2026-09-20T22:36:40.939Z",
   "results": {
     "mobile": {
       "scores": {
@@ -12,35 +12,35 @@
       },
       "metrics": {
         "lcp": {
-          "value": 5401.715741101507,
+          "value": 5388.713030710606,
           "display": "5.4 s"
         },
         "cls": {
-          "value": 0.006497484185705052,
-          "display": "0.006"
+          "value": 0.014047552854203,
+          "display": "0.014"
         },
         "tbt": {
-          "value": 43,
-          "display": "40 ms"
+          "value": 21,
+          "display": "20 ms"
         },
         "fcp": {
-          "value": 1667.7026804051616,
+          "value": 1667.701969936731,
           "display": "1.7 s"
         },
         "si": {
-          "value": 3247.8501382779714,
-          "display": "3.2 s"
+          "value": 3579.6099952337718,
+          "display": "3.6 s"
         }
       },
       "field": null,
       "lighthouseVersion": "13.4.1",
-      "fetchTime": "2026-09-20T22:27:01.528Z",
+      "fetchTime": "2026-09-20T22:35:14.872Z",
       "finalUrl": "https://musnadye.com/",
       "samples": 3,
       "performanceSamples": [
         78,
-        78,
-        89
+        93,
+        78
       ]
     },
     "desktop": {
@@ -52,35 +52,35 @@
       },
       "metrics": {
         "lcp": {
-          "value": 472.0107639819886,
+          "value": 527.0176154236277,
           "display": "0.5 s"
         },
         "cls": {
-          "value": 0.011038434040867797,
+          "value": 0.010869164713793586,
           "display": "0.011"
         },
         "tbt": {
-          "value": 0,
-          "display": "0 ms"
+          "value": 57,
+          "display": "60 ms"
         },
         "fcp": {
-          "value": 321.00679830441385,
-          "display": "0.3 s"
+          "value": 464.3991793459767,
+          "display": "0.5 s"
         },
         "si": {
-          "value": 567.0633870210527,
-          "display": "0.6 s"
+          "value": 937.4800334875663,
+          "display": "0.9 s"
         }
       },
       "field": null,
       "lighthouseVersion": "13.4.1",
-      "fetchTime": "2026-09-20T22:29:57.817Z",
+      "fetchTime": "2026-09-20T22:36:09.500Z",
       "finalUrl": "https://musnadye.com/",
       "samples": 3,
       "performanceSamples": [
         100,
         100,
-        99
+        100
       ]
     }
   }

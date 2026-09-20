@@ -102,8 +102,8 @@ Arabic news and claim verification · Design and full-stack
 
 | | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
 |---|---|---|---|---|---|---|---|
-| Mobile | **78** | **100** | **100** | **100** | 5.4 s | 0.006 | 40 ms |
-| Desktop | **100** | **100** | **100** | **100** | 0.5 s | 0.011 | 0 ms |
+| Mobile | **78** | **100** | **100** | **100** | 5.4 s | 0.014 | 20 ms |
+| Desktop | **100** | **100** | **100** | **100** | 0.5 s | 0.011 | 60 ms |
 
 ### قدس الإخبارية — [qudsn.co](https://qudsn.co/)
 
@@ -113,8 +113,8 @@ Palestinian news network — high-volume Arabic newsroom · Design and full-stac
 
 | | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
 |---|---|---|---|---|---|---|---|
-| Mobile | **82** | **100** | **92** | **100** | 4.7 s | 0 | 40 ms |
-| Desktop | **99** | **100** | **96** | **100** | 0.9 s | 0 | 30 ms |
+| Mobile | **87** | **100** | **96** | **100** | 3.2 s | 0 | 240 ms |
+| Desktop | **91** | **100** | **96** | **100** | 0.7 s | 0 | 220 ms |
 
 Field data (real Chrome users, 28-day rolling): **FAST** — LCP 2.33 s · INP 104 ms · CLS 0.00.
 
