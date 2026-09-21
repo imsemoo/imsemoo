@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "label": "mobile",
-  "message": "perf 93 · a11y 100 · bp 96 · seo 100",
-  "color": "brightgreen",
+  "message": "perf 84 · a11y 100 · bp 96 · seo 100",
+  "color": "orange",
   "cacheSeconds": 3600
 }

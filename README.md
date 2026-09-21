@@ -102,8 +102,8 @@ Arabic news and claim verification · Design and full-stack
 
 | | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
 |---|---|---|---|---|---|---|---|
-| Mobile | **98** | **100** | **100** | **100** | 2.0 s | 0.014 | 40 ms |
-| Desktop | **100** | **100** | **100** | **100** | 0.5 s | 0.011 | 10 ms |
+| Mobile | **99** | **100** | **100** | **100** | 1.9 s | 0.008 | 20 ms |
+| Desktop | **99** | **100** | **100** | **100** | 0.5 s | 0.013 | 90 ms |
 
 ### قدس الإخبارية — [qudsn.co](https://qudsn.co/)
 
@@ -113,8 +113,8 @@ Palestinian news network — high-volume Arabic newsroom · Design and full-stac
 
 | | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
 |---|---|---|---|---|---|---|---|
-| Mobile | **93** | **100** | **96** | **100** | 2.7 s | 0 | 70 ms |
-| Desktop | **98** | **100** | **96** | **100** | 0.7 s | 0 | 80 ms |
+| Mobile | **84** | **100** | **96** | **100** | 3.9 s | 0 | 40 ms |
+| Desktop | **93** | **97** | **96** | **100** | 1.0 s | 0 | 160 ms |
 
 Field data (real Chrome users, 28-day rolling): **FAST** — LCP 2.33 s · INP 104 ms · CLS 0.00.
 
@@ -126,8 +126,8 @@ This profile's own site, hand-written HTML and CSS · Design and front-end, my o
 
 | | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
 |---|---|---|---|---|---|---|---|
-| Mobile | **97** | **100** | **96** | **100** | 2.5 s | 0.013 | 0 ms |
-| Desktop | **100** | **100** | **96** | **100** | 0.4 s | 0 | 0 ms |
+| Mobile | **100** | **100** | **100** | **100** | 1.7 s | 0 | 10 ms |
+| Desktop | **100** | **100** | **100** | **100** | 0.8 s | 0.003 | 30 ms |
 
 <sub>Measured 21 September 2026 · Lighthouse 13.4.1 · [raw results](data/psi) · [workflow](.github/workflows/pagespeed.yml)</sub>
 <!-- PSI:END -->

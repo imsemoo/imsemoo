@@ -1,35 +1,35 @@
 {
   "name": "قدس الإخبارية",
   "url": "https://qudsn.co/",
-  "measuredAt": "2026-09-21T02:40:11.919Z",
+  "measuredAt": "2026-09-21T11:22:32.066Z",
   "results": {
     "mobile": {
       "scores": {
-        "performance": 93,
+        "performance": 84,
         "accessibility": 100,
         "best-practices": 96,
         "seo": 100
       },
       "metrics": {
         "lcp": {
-          "value": 2701.012850830739,
-          "display": "2.7 s"
+          "value": 3910.0054600904277,
+          "display": "3.9 s"
         },
         "cls": {
           "value": 0,
           "display": "0"
         },
         "tbt": {
-          "value": 72.5,
-          "display": "70 ms"
+          "value": 39,
+          "display": "40 ms"
         },
         "fcp": {
-          "value": 1859.2519924493217,
-          "display": "1.9 s"
+          "value": 1823.859022414088,
+          "display": "1.8 s"
         },
         "si": {
-          "value": 4057.7592601233,
-          "display": "4.1 s"
+          "value": 4857.828723039099,
+          "display": "4.9 s"
         }
       },
       "field": {
@@ -39,42 +39,42 @@
         "cls": 0
       },
       "lighthouseVersion": "13.4.1",
-      "fetchTime": "2026-09-21T02:39:12.342Z",
+      "fetchTime": "2026-09-21T11:21:04.501Z",
       "finalUrl": "https://qudsn.co/",
       "samples": 3,
       "performanceSamples": [
-        91,
-        93,
-        93
+        84,
+        84,
+        84
       ]
     },
     "desktop": {
       "scores": {
-        "performance": 98,
-        "accessibility": 100,
+        "performance": 93,
+        "accessibility": 97,
         "best-practices": 96,
         "seo": 100
       },
       "metrics": {
         "lcp": {
-          "value": 681.0134388677486,
-          "display": "0.7 s"
+          "value": 1035.5223614699182,
+          "display": "1.0 s"
         },
         "cls": {
           "value": 0.0001169621824022864,
           "display": "0"
         },
         "tbt": {
-          "value": 84.5,
-          "display": "80 ms"
+          "value": 157.24931613252681,
+          "display": "160 ms"
         },
         "fcp": {
-          "value": 502.70310144600444,
+          "value": 506.1433913472345,
           "display": "0.5 s"
         },
         "si": {
-          "value": 1203.0535537133933,
-          "display": "1.2 s"
+          "value": 1515.9062613107662,
+          "display": "1.5 s"
         }
       },
       "field": {
@@ -84,12 +84,12 @@
         "cls": 1
       },
       "lighthouseVersion": "13.4.1",
-      "fetchTime": "2026-09-21T02:39:37.210Z",
+      "fetchTime": "2026-09-21T11:21:33.511Z",
       "finalUrl": "https://qudsn.co/",
       "samples": 3,
       "performanceSamples": [
-        98,
-        98,
+        93,
+        93,
         98
       ]
     }
