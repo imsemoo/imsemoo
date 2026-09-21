@@ -1,0 +1,87 @@
+{
+  "name": "Portfolio",
+  "url": "https://imsemoo.github.io/eslam-portfolio/",
+  "measuredAt": "2026-09-21T02:41:43.458Z",
+  "results": {
+    "mobile": {
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": {
+          "value": 2483.155563201387,
+          "display": "2.5 s"
+        },
+        "cls": {
+          "value": 0.01263185702751873,
+          "display": "0.013"
+        },
+        "tbt": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "fcp": {
+          "value": 1501.0084060193512,
+          "display": "1.5 s"
+        },
+        "si": {
+          "value": 3023.1274417697928,
+          "display": "3.0 s"
+        }
+      },
+      "field": null,
+      "lighthouseVersion": "13.4.1",
+      "fetchTime": "2026-09-21T02:40:13.692Z",
+      "finalUrl": "https://imsemoo.github.io/eslam-portfolio/",
+      "samples": 3,
+      "performanceSamples": [
+        97,
+        96,
+        99
+      ]
+    },
+    "desktop": {
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": {
+          "value": 381.0057955203147,
+          "display": "0.4 s"
+        },
+        "cls": {
+          "value": 0.00002592410783436793,
+          "display": "0"
+        },
+        "tbt": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "fcp": {
+          "value": 361.00540915229374,
+          "display": "0.4 s"
+        },
+        "si": {
+          "value": 674.1009258387131,
+          "display": "0.7 s"
+        }
+      },
+      "field": null,
+      "lighthouseVersion": "13.4.1",
+      "fetchTime": "2026-09-21T02:41:02.226Z",
+      "finalUrl": "https://imsemoo.github.io/eslam-portfolio/",
+      "samples": 3,
+      "performanceSamples": [
+        100,
+        100,
+        100
+      ]
+    }
+  }
+}

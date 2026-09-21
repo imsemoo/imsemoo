@@ -102,8 +102,8 @@ Arabic news and claim verification · Design and full-stack
 
 | | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
 |---|---|---|---|---|---|---|---|
-| Mobile | **78** | **100** | **100** | **100** | 5.4 s | 0.014 | 20 ms |
-| Desktop | **100** | **100** | **100** | **100** | 0.5 s | 0.011 | 60 ms |
+| Mobile | **98** | **100** | **100** | **100** | 2.0 s | 0.014 | 40 ms |
+| Desktop | **100** | **100** | **100** | **100** | 0.5 s | 0.011 | 10 ms |
 
 ### قدس الإخبارية — [qudsn.co](https://qudsn.co/)
 
@@ -113,12 +113,23 @@ Palestinian news network — high-volume Arabic newsroom · Design and full-stac
 
 | | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
 |---|---|---|---|---|---|---|---|
-| Mobile | **87** | **100** | **96** | **100** | 3.2 s | 0 | 240 ms |
-| Desktop | **91** | **100** | **96** | **100** | 0.7 s | 0 | 220 ms |
+| Mobile | **93** | **100** | **96** | **100** | 2.7 s | 0 | 70 ms |
+| Desktop | **98** | **100** | **96** | **100** | 0.7 s | 0 | 80 ms |
 
 Field data (real Chrome users, 28-day rolling): **FAST** — LCP 2.33 s · INP 104 ms · CLS 0.00.
 
-<sub>Measured 20 September 2026 · Lighthouse 13.4.1 · [raw results](data/psi) · [workflow](.github/workflows/pagespeed.yml)</sub>
+### Portfolio — [imsemoo.github.io](https://imsemoo.github.io/eslam-portfolio/)
+
+This profile's own site, hand-written HTML and CSS · Design and front-end, my own
+
+![mobile scores](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fimsemoo%2Fimsemoo%2Fmain%2Fdata%2Fbadges%2Fimsemoo-github-io-mobile.json) ![desktop scores](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fimsemoo%2Fimsemoo%2Fmain%2Fdata%2Fbadges%2Fimsemoo-github-io-desktop.json)
+
+| | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
+|---|---|---|---|---|---|---|---|
+| Mobile | **97** | **100** | **96** | **100** | 2.5 s | 0.013 | 0 ms |
+| Desktop | **100** | **100** | **96** | **100** | 0.4 s | 0 | 0 ms |
+
+<sub>Measured 21 September 2026 · Lighthouse 13.4.1 · [raw results](data/psi) · [workflow](.github/workflows/pagespeed.yml)</sub>
 <!-- PSI:END -->
 
 
