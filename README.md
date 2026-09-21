@@ -14,7 +14,7 @@ the Gulf, the UK and Australia.
 
 🏢 **TakTek** &nbsp;·&nbsp; 🌍 English / العربية &nbsp;·&nbsp; 🏠 Remote, UTC+2 &nbsp;·&nbsp; ⭐ 5.0 on Mostaql
 
-[**LinkedIn**](https://www.linkedin.com/in/imsemooo/) &nbsp;·&nbsp; [**Upwork**](https://www.upwork.com/freelancers/imsemoo) &nbsp;·&nbsp; [**Mostaql**](https://mostaql.com/u/imsemoo/portfolio) &nbsp;·&nbsp; [**Portfolio**](https://imsemoo.github.io/Portfolio-Dark/)
+[**LinkedIn**](https://www.linkedin.com/in/imsemooo/) &nbsp;·&nbsp; [**Upwork**](https://www.upwork.com/freelancers/imsemoo) &nbsp;·&nbsp; [**Mostaql**](https://mostaql.com/u/imsemoo/portfolio) &nbsp;·&nbsp; [**Portfolio**](https://imsemoo.github.io/eslam-portfolio/)
 
 ---
 

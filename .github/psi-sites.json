@@ -12,6 +12,12 @@
     "role": "Design and full-stack"
   },
   {
+    "name": "Portfolio",
+    "url": "https://imsemoo.github.io/eslam-portfolio/",
+    "note": "This profile's own site, hand-written HTML and CSS",
+    "role": "Design and front-end, my own"
+  },
+  {
     "name": "الجرمق",
     "url": "https://new.aljarmaq.net/",
     "note": "Palestinian media network inside the 1948 territories",
