@@ -1,86 +1,86 @@
 {
   "name": "Portfolio",
   "url": "https://imsemoo.github.io/eslam-portfolio/",
-  "measuredAt": "2026-09-28T12:28:27.242Z",
+  "measuredAt": "2026-10-05T12:59:21.015Z",
   "results": {
     "mobile": {
       "scores": {
-        "performance": 95,
+        "performance": 90,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
       },
       "metrics": {
         "lcp": {
-          "value": 2851.1433775835985,
-          "display": "2.9 s"
+          "value": 3537.6402831196538,
+          "display": "3.5 s"
         },
         "cls": {
-          "value": 0,
+          "value": 0.000409435910073215,
           "display": "0"
         },
         "tbt": {
-          "value": 74,
-          "display": "70 ms"
+          "value": 89,
+          "display": "90 ms"
         },
         "fcp": {
-          "value": 1295.5,
+          "value": 1288.5,
           "display": "1.3 s"
         },
         "si": {
-          "value": 2888.05451915243,
-          "display": "2.9 s"
+          "value": 3124.0348486824805,
+          "display": "3.1 s"
         }
       },
       "field": null,
       "lighthouseVersion": "13.5.0",
-      "fetchTime": "2026-09-28T12:26:52.698Z",
+      "fetchTime": "2026-10-05T12:57:49.821Z",
       "finalUrl": "https://imsemoo.github.io/eslam-portfolio/",
       "samples": 3,
       "performanceSamples": [
-        95,
-        95,
-        99
+        90,
+        90,
+        90
       ]
     },
     "desktop": {
       "scores": {
-        "performance": 98,
+        "performance": 100,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
       },
       "metrics": {
         "lcp": {
-          "value": 565.5,
+          "value": 621,
           "display": "0.6 s"
         },
         "cls": {
-          "value": 0.001450155092412276,
-          "display": "0.001"
+          "value": 0.001875698945526793,
+          "display": "0.002"
         },
         "tbt": {
-          "value": 134.5,
-          "display": "130 ms"
+          "value": 56.5,
+          "display": "60 ms"
         },
         "fcp": {
-          "value": 380.5,
+          "value": 448.5,
           "display": "0.4 s"
         },
         "si": {
-          "value": 741.492221483393,
-          "display": "0.7 s"
+          "value": 819.2277353506163,
+          "display": "0.8 s"
         }
       },
       "field": null,
       "lighthouseVersion": "13.5.0",
-      "fetchTime": "2026-09-28T12:27:41.405Z",
+      "fetchTime": "2026-10-05T12:58:37.857Z",
       "finalUrl": "https://imsemoo.github.io/eslam-portfolio/",
       "samples": 3,
       "performanceSamples": [
-        98,
         100,
-        98
+        100,
+        100
       ]
     }
   }
