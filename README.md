@@ -102,8 +102,8 @@ Arabic news and claim verification · Design and full-stack
 
 | | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
 |---|---|---|---|---|---|---|---|
-| Mobile | **94** | **100** | **100** | **100** | 2.9 s | 0.014 | 20 ms |
-| Desktop | **99** | **100** | **100** | **100** | 0.7 s | 0.011 | 40 ms |
+| Mobile | **97** | **100** | **100** | **100** | 2.1 s | 0.008 | 120 ms |
+| Desktop | **99** | **100** | **100** | **100** | 0.7 s | 0.013 | 30 ms |
 
 ### قدس الإخبارية — [qudsn.co](https://qudsn.co/)
 
@@ -113,10 +113,10 @@ Palestinian news network — high-volume Arabic newsroom · Design and full-stac
 
 | | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
 |---|---|---|---|---|---|---|---|
-| Mobile | **76** | **100** | **96** | **100** | 4.4 s | 0 | 200 ms |
-| Desktop | **94** | **100** | **96** | **100** | 1.1 s | 0 | 130 ms |
+| Mobile | **84** | **97** | **96** | **100** | 2.9 s | 0 | 310 ms |
+| Desktop | **98** | **97** | **96** | **100** | 0.8 s | 0 | 70 ms |
 
-Field data (real Chrome users, 28-day rolling): **FAST** — LCP 2.04 s · INP 99 ms · CLS 0.00.
+Field data (real Chrome users, 28-day rolling): **FAST** — LCP 1.78 s · INP 99 ms · CLS 0.00.
 
 ### Portfolio — [imsemoo.github.io](https://imsemoo.github.io/eslam-portfolio/)
 
@@ -126,10 +126,10 @@ This profile's own site, hand-written HTML and CSS · Design and front-end, my o
 
 | | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
 |---|---|---|---|---|---|---|---|
-| Mobile | **90** | **100** | **100** | **100** | 3.5 s | 0 | 90 ms |
-| Desktop | **100** | **100** | **100** | **100** | 0.6 s | 0.002 | 60 ms |
+| Mobile | **93** | **100** | **100** | **100** | 2.7 s | 0 | 180 ms |
+| Desktop | **100** | **100** | **100** | **100** | 0.6 s | 0.002 | 0 ms |
 
-<sub>Measured 5 October 2026 · Lighthouse 13.5.0 · [raw results](data/psi) · [workflow](.github/workflows/pagespeed.yml)</sub>
+<sub>Measured 12 October 2026 · Lighthouse 13.5.0 · [raw results](data/psi) · [workflow](.github/workflows/pagespeed.yml)</sub>
 <!-- PSI:END -->
 
 
