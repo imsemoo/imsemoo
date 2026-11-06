@@ -86,7 +86,7 @@ Build the array where Blade is not looking, and echo the encoded string:
         'headline' => $post->title,
     ];
 @endphp
-<script type="application/ld+json">{!! json_encode($schema, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES) !!}</script>
+<script type="application/ld+json">{!! json_encode($schema, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES|JSON_HEX_TAG) !!}</script>
 ```
 
 Then a second trap, found the expensive way on the first site: **the literal

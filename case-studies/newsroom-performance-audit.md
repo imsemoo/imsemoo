@@ -60,8 +60,6 @@ reading the same requests:
   actual audience.
 - The geo lookup answering 429 meant Indian readers were quoted the wrong
   currency, silently, for an unknown period.
-- A post title containing the right characters could close the JSON-LD block
-  and execute as HTML. That one was a security fix, not a speed fix.
 
 ## The change I measured and threw away
 

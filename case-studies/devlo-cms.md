@@ -1,7 +1,7 @@
 # Devlo CMS — twenty-four newsrooms out of one codebase
 
 **What** A multi-tenant publishing platform: one Laravel application, one deploy, twenty-four Arabic news sites, each with its own theme, its own modules, its own languages and its own editorial team
-**My role** Architecture and full-stack — the dashboard, the theme layer, the guards, the deploy
+**My role** Design and full-stack, in a team — the dashboard and the theme layer
 **Live demo** [demo.taktek.co](https://demo.taktek.co/dashboard)
 
 Six of the sites listed on my profile run on it, including
