@@ -1,19 +1,19 @@
 {
   "name": "Portfolio",
   "url": "https://imsemoo.github.io/eslam-portfolio/",
-  "measuredAt": "2026-11-02T14:07:32.911Z",
+  "measuredAt": "2026-11-09T14:38:33.706Z",
   "results": {
     "mobile": {
       "scores": {
-        "performance": 93,
+        "performance": 94,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
       },
       "metrics": {
         "lcp": {
-          "value": 2742.6943413424333,
-          "display": "2.7 s"
+          "value": 2751.107792619624,
+          "display": "2.8 s"
         },
         "cls": {
           "value": 0,
@@ -24,23 +24,23 @@
           "display": "0 ms"
         },
         "fcp": {
-          "value": 1131,
+          "value": 1129,
           "display": "1.1 s"
         },
         "si": {
-          "value": 4359.588305373889,
-          "display": "4.4 s"
+          "value": 4311.3624085907295,
+          "display": "4.3 s"
         }
       },
       "field": null,
       "lighthouseVersion": "13.6.0",
-      "fetchTime": "2026-11-02T14:06:05.614Z",
+      "fetchTime": "2026-11-09T14:37:10.738Z",
       "finalUrl": "https://imsemoo.github.io/eslam-portfolio/",
       "samples": 3,
       "performanceSamples": [
-        93,
-        93,
-        93
+        94,
+        98,
+        94
       ]
     },
     "desktop": {
@@ -60,21 +60,21 @@
           "display": "0.002"
         },
         "tbt": {
-          "value": 1,
-          "display": "0 ms"
+          "value": 5,
+          "display": "10 ms"
         },
         "fcp": {
-          "value": 392,
+          "value": 405,
           "display": "0.4 s"
         },
         "si": {
-          "value": 628.5352904836438,
-          "display": "0.6 s"
+          "value": 731.0061466648883,
+          "display": "0.7 s"
         }
       },
       "field": null,
       "lighthouseVersion": "13.6.0",
-      "fetchTime": "2026-11-02T14:06:57.560Z",
+      "fetchTime": "2026-11-09T14:37:50.377Z",
       "finalUrl": "https://imsemoo.github.io/eslam-portfolio/",
       "samples": 3,
       "performanceSamples": [
